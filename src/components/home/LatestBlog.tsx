@@ -1,7 +1,10 @@
 "use client";
 
+"use client";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Card, Badge as UIBadge } from "@/components/ui";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
 import { siteConfig } from "@/config";
@@ -110,12 +113,15 @@ function BlogPostCard({
       <Card variant="interactive" className="card-hover">
         <div className="flex flex-col gap-4">
           {post.featuredImage && (
-            <img
-              src={post.featuredImage}
-              alt={post.title}
-              className="w-full h-48 object-cover rounded-lg"
-              loading="lazy"
-            />
+            <div className="relative w-full h-48 rounded-lg overflow-hidden">
+              <Image
+                src={post.featuredImage}
+                alt={post.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
           )}
 
           <div className="flex flex-col gap-3 flex-grow">

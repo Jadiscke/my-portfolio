@@ -11,4 +11,3 @@ playwright-mcp/
 docs/
 .env.example
 .vercelignore
-pnpm-lock.yaml

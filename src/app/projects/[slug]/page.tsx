@@ -1,9 +1,12 @@
 import { Section } from "@/components/ui";
-import { notFound } from "next/navigation";
 
 export const metadata = {
   title: "Project | AI Developer Portfolio",
 };
+
+export function generateStaticParams() {
+  return [{ slug: "ai-project-alpha" }, { slug: "neural-network-visualization" }, { slug: "data-analytics-dashboard" }];
+}
 
 export default async function ProjectDetailPage({
   params,
@@ -11,8 +14,6 @@ export default async function ProjectDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-
-  if (!slug) notFound();
 
   return (
     <Section title={slug.replace(/-/g, " ")}>
