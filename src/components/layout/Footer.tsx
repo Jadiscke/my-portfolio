@@ -22,11 +22,11 @@ export function Footer() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-dracula-purple to-dracula-pink flex items-center justify-center">
                 <span className="text-dracula-fg font-bold text-lg">A</span>
               </div>
-              <span className="text-xl font-bold text-gradient">AI Portfolio</span>
+              <span className="text-xl font-bold text-gradient">Vinícius Tasso</span>
             </Link>
             <p className="text-dracula-fg-muted max-w-md">
-              Building innovative AI and machine learning solutions.
-              Exploring the intersection of technology and creativity.
+              Building full stack applications, database engines, and developer tools.
+              Exploring the intersection of engineering and software.
             </p>
           </div>
 
@@ -96,7 +96,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-dracula-bg-lighter/30 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-dracula-fg-muted text-sm text-center md:text-left">
-            © {currentYear} AI Portfolio. All rights reserved.
+            © {currentYear} Vinícius Jadiscke. All rights reserved.
           </p>
           <p className="text-dracula-fg-muted text-sm flex items-center justify-center md:justify-end gap-1">
             Made with <Heart className="w-3 h-3 text-dracula-pink fill-dracula-pink" /> using Next.js

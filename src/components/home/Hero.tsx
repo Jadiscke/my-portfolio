@@ -87,7 +87,7 @@ export function Hero() {
             viewport={{ once: true }}
             className="inline-block mb-6"
           >
-            <Badge variant="purple">Available for opportunities</Badge>
+            <Badge variant="purple">Full Stack Developer</Badge>
           </motion.div>
 
           <motion.h1
@@ -108,9 +108,9 @@ export function Hero() {
             viewport={{ once: true }}
             className="text-xl text-dracula-fg-muted mb-8 max-w-2xl mx-auto"
           >
-            An AI/ML engineer passionate about building intelligent systems,
-            exploring cutting-edge research, and creating practical solutions
-            that make a real-world impact.
+            An Industrial Engineer turned Full Stack Developer. I build web
+            applications, database engines, and tools that solve real problems. Open
+            source contributor based in {siteConfig.location}.
           </motion.p>
 
           <motion.div
@@ -141,11 +141,11 @@ export function Hero() {
             className="flex flex-wrap items-center justify-center gap-4 text-sm text-dracula-fg-muted mb-12"
           >
             <span>Built with</span>
-            <Badge variant="purple">Python</Badge>
-            <Badge variant="pink">PyTorch</Badge>
-            <Badge variant="orange">TensorFlow</Badge>
-            <Badge variant="blue">Next.js</Badge>
-            <Badge variant="yellow">Docker</Badge>
+            <Badge variant="purple">TypeScript</Badge>
+            <Badge variant="pink">Next.js</Badge>
+            <Badge variant="orange">Go</Badge>
+            <Badge variant="blue">Tailwind CSS</Badge>
+            <Badge variant="yellow">React</Badge>
           </motion.div>
 
           {/* Decorative code snippet */}
@@ -164,15 +164,14 @@ export function Hero() {
               </div>
               <pre className="text-dracula-fg text-xs overflow-x-auto">
                 <code>
-                  <span className="code-keyword">class</span> <span className="code-variable">AIEngine</span>{"<"}<span className="code-type">Model</span>{"{"}{"\n"}
-                  <span className="code-keyword">    </span>{"def"} <span className="code-function">__init__</span>(self):{"\n"}
-                  <span className="code-keyword">        </span>self.initializing(){"\n"}{"\n"}
-                  <span className="code-keyword">    </span>{"def"} <span className="code-function">transform</span>(data):{"\n"}
-                  <span className="code-keyword">        </span>output = self.model.predict(data){"\n"}
-                  <span className="code-keyword">        </span><span className="code-keyword">return</span> output{"\n"}{"\n"}
-                  <span className="code-keyword">    </span>{"def"} <span className="code-function">optimize</span>(parameters):{"\n"}
-                  <span className="code-keyword">        </span>{"# Neural architecture search"}{"\n"}
-                  <span className="code-keyword">        </span><span className="code-keyword">return</span> self.search_best(params){"\n"}
+                  <span className="code-keyword">package</span> <span className="code-variable">main</span>{"\n\n"}
+                  <span className="code-keyword">import</span> (<span className="code-string">"fmt"</span>){"\n\n"}
+                  <span className="code-keyword">func</span> <span className="code-function">main</span>() {"{"}{"\n"}
+                  <span className="code-keyword">    </span>db := engine.<span className="code-function">New</span>(){"\n"}
+                  <span className="code-keyword">    </span>db.<span className="code-function">Execute</span>(<span className="code-string">"SELECT * FROM users"</span>){"\n"}
+                  <span className="code-keyword">    </span><span className="code-keyword">defer</span> db.<span className="code-function">Close</span>(){"\n"}
+                  <span className="code-keyword">    </span>fmt.<span className="code-function">Println</span>(<span className="code-string">"Database engine running"</span>){"\n"}
+                  {"}"}
                 </code>
               </pre>
             </div>

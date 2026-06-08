@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 export function generateStaticParams() {
-  return [{ slug: "ai-project-alpha" }, { slug: "neural-network-visualization" }, { slug: "data-analytics-dashboard" }];
+  return [{ slug: "myown-sql" }, { slug: "learnnext" }, { slug: "notes-app" }];
 }
 
 export default async function ProjectDetailPage({

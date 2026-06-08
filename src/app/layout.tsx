@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { siteConfig } from "@/config";
 import { DraculaThemeProvider } from "@/components/shared";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "AI Developer Portfolio",
-  description: "Portfolio showcasing AI/ML projects, research, and contributions",
-  keywords: ["AI", "Machine Learning", "Deep Learning", "Portfolio"],
-  authors: [{ name: "Alex Developer" }],
+  title: siteConfig.title,
+  description: siteConfig.bio,
+  keywords: ["Full Stack Developer", "TypeScript", "Next.js", "Go", "React", "Tailwind CSS"],
+  authors: [{ name: siteConfig.name }],
   openGraph: {
-    title: "AI Developer Portfolio",
-    description: "Portfolio showcasing AI/ML projects, research, and contributions",
+    title: siteConfig.title,
+    description: siteConfig.bio,
     type: "website",
   },
 };

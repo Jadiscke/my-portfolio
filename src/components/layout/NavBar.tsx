@@ -55,7 +55,7 @@ export function NavBar({
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-dracula-purple to-dracula-pink flex items-center justify-center">
             <span className="text-dracula-fg font-bold text-lg">A</span>
           </div>
-          <span className="text-xl font-bold text-gradient">AI Portfolio</span>
+          <span className="text-xl font-bold text-gradient">VT</span>
         </Link>
 
         {/* Desktop Navigation */}
