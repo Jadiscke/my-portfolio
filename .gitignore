@@ -1,20 +1,14 @@
-# Portfolio Project Implementation
-
-## Overview
-This document tracks the implementation progress of the portfolio project.
-
-## Completed Tasks
-- [x] Initialize git repository
-- [x] Create .gitignore file
-
-## In Progress
-- [ ] Define project structure
-- [ ] Set up project dependencies
-
-## TODO
-- [ ] Implement core features
-- [ ] Create portfolio content
-- [ ] Build and deploy
-
-## Notes
-Use this document to track progress and plan future tasks.
+node_modules/
+.next/
+out/
+.env.local
+.env.*.local
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+playwright-mcp/
+.claude/
+docs/
+.env.example
+.vercelignore
+pnpm-lock.yaml

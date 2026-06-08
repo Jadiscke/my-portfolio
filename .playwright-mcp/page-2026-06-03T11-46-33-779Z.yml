@@ -1,0 +1,395 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to content":
+      - /url: "#geist-skip-nav"
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - link "Go to Vercel homepage" [ref=e6] [cursor=pointer]:
+            - /url: https://vercel.com/home?utm_source=next-site&utm_medium=banner&utm_campaign=home_none
+            - img "Vercel logomark" [ref=e7]
+          - img [ref=e9]
+          - link "Go to the homepage" [ref=e11] [cursor=pointer]:
+            - /url: /
+            - img "Next.js logotype" [ref=e12]
+        - link "Showcase" [ref=e21] [cursor=pointer]:
+          - /url: /showcase
+        - link "Docs" [ref=e22] [cursor=pointer]:
+          - /url: /docs
+        - link "Blog" [ref=e23] [cursor=pointer]:
+          - /url: /blog
+        - link "Templates" [ref=e24] [cursor=pointer]:
+          - /url: https://vercel.com/templates/next.js?utm_source=next-site&utm_medium=navbar&utm_campaign=next_site_nav_templates
+          - text: Templates
+          - img [ref=e25]
+        - link "Enterprise" [ref=e27] [cursor=pointer]:
+          - /url: https://vercel.com/contact/sales/nextjs?utm_source=next-site&utm_medium=navbar&utm_campaign=next_site_nav_enterprise
+          - text: Enterprise
+          - img [ref=e28]
+      - generic [ref=e30]:
+        - button "Search documentation..." [ref=e31] [cursor=pointer]
+        - link "Vercel logomark Deploy" [ref=e32] [cursor=pointer]:
+          - /url: https://vercel.com/new/clone?utm_source=next-site&utm_medium=banner&b=main&s=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fnextjs&template=nextjs&teamCreateStatus=hidden&utm_campaign=home_none
+          - img "Vercel logomark" [ref=e34]
+          - generic [ref=e36]: Deploy
+        - link "Learn" [ref=e37] [cursor=pointer]:
+          - /url: /learn
+          - generic [ref=e38]: Learn
+  - region "Next.js Nights — SF, Amsterdam, London" [ref=e39]:
+    - img [ref=e40]
+    - generic [ref=e42]: NEXT.JS NIGHTS
+    - generic [ref=e44]: SF JUN 9 • AMS JUN 11 • LDN JUN 18
+    - link "VIEW EVENTS" [ref=e46] [cursor=pointer]:
+      - /url: /nights
+      - text: VIEW EVENTS
+      - generic [ref=e47]: ›
+  - main [ref=e48]:
+    - generic [ref=e49]:
+      - main [ref=e50]:
+        - generic [ref=e52]:
+          - img [ref=e53]
+          - heading "The React Framework for the Web" [level=1] [ref=e55]
+          - paragraph [ref=e57]:
+            - text: Used by some of the world's largest companies, Next.js enables you to create
+            - strong [ref=e58]: high-quality web applications
+            - text: with the power of React components.
+          - generic [ref=e60]:
+            - img [ref=e61]
+            - generic [ref=e63]:
+              - link "Get Started" [ref=e64] [cursor=pointer]:
+                - /url: /docs
+                - generic [ref=e65]: Get Started
+              - link "Learn Next.js" [ref=e66] [cursor=pointer]:
+                - /url: /learn?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=home
+                - generic [ref=e67]: Learn Next.js
+            - button "Copy npx command for creating a new Next.js app" [ref=e68]:
+              - generic [ref=e69]: ▲ ~ npx create-next-app@latest
+              - img [ref=e70]
+              - img [ref=e72]
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - heading "What's in Next.js?" [level=2] [ref=e77]
+          - paragraph [ref=e78]: Everything you need to build great products on the web.
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - link "Built-in Optimizations" [ref=e81] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/optimizing/images
+              - generic [ref=e83]:
+                - generic [ref=e84]:
+                  - generic [ref=e86]: Original
+                  - img [ref=e88]
+                - generic [ref=e91]:
+                  - generic [ref=e94]: 1440px
+                  - img [ref=e96]
+                - generic [ref=e705]:
+                  - generic [ref=e708]: 375px
+                  - img [ref=e710]
+              - generic [ref=e881]: Built-in Optimizations
+              - generic [ref=e882]: Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.
+            - link "Data Fetching" [ref=e883] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/data-fetching
+              - generic [ref=e885]: Data Fetching
+              - generic [ref=e886]: Make your React component async and await your data. Next.js supports both server and client data fetching.
+            - link "Server Actions" [ref=e887] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/data-fetching/forms-and-mutations
+              - generic [ref=e889]: Server Actions
+              - generic [ref=e890]: Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.
+            - link "Advanced Routing & Nested Layouts" [ref=e891] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/routing
+              - generic [ref=e893]: Advanced Routing & Nested Layouts
+              - generic [ref=e894]: Create routes using the file system, including support for more advanced routing patterns and UI layouts.
+          - generic [ref=e895]:
+            - link "Dynamic HTML Streaming" [ref=e896] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/routing/loading-ui-and-streaming
+              - generic [ref=e898]:
+                - img [ref=e899]
+                - img "Vercel logomark" [ref=e910]
+                - img [ref=e934]
+                - img [ref=e936]
+                - img [ref=e938]
+                - img [ref=e940]
+              - generic [ref=e943]: Dynamic HTML Streaming
+              - generic [ref=e944]: Instantly stream UI from the server, integrated with the App Router and React Suspense.
+            - link "CSS Support" [ref=e945] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/styling
+              - generic [ref=e947]: CSS Support
+              - generic [ref=e948]: Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.
+            - link "Route Handlers" [ref=e949] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/routing/router-handlers
+              - generic [ref=e951]: Route Handlers
+              - generic [ref=e952]: Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.
+            - link "Middleware" [ref=e953] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/routing/middleware
+              - generic [ref=e955]: Middleware
+              - generic [ref=e956]: Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.
+          - generic [ref=e957]:
+            - link "React Server Components" [ref=e958] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/rendering/server-components
+              - img "A tree structure of 3D spheres are connected by lines" [ref=e960]
+              - generic [ref=e962]: React Server Components
+              - generic [ref=e963]: Add components without sending additional client-side JavaScript. Built on the latest React features.
+            - link "Client and Server Rendering" [ref=e964] [cursor=pointer]:
+              - /url: /docs/app/building-your-application/rendering
+              - generic [ref=e966]: Client and Server Rendering
+              - generic [ref=e967]: Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.
+            - link "Next.js 16" [ref=e968] [cursor=pointer]:
+              - /url: /blog/next-16
+              - generic [ref=e1062]: Next.js 16
+              - generic [ref=e1063]: The power of full-stack to the frontend. Read the release notes.
+              - img [ref=e1065]
+      - generic [ref=e1067]:
+        - generic [ref=e1069]:
+          - heading "Built on a foundation of fast, production-grade tooling" [level=2] [ref=e1070]
+          - generic [ref=e1071]:
+            - img "A bunch of connecting lines that form into the CPU, with the text Powered By on top of the the CPU. Gradient lines are animating along the drawn lines, dissolving into the CPU in the center." [ref=e1072]
+            - generic [ref=e1119]: Powered By
+          - generic [ref=e1130]:
+            - link "React The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions." [ref=e1131] [cursor=pointer]:
+              - /url: https://react.dev
+              - img [ref=e1133]
+              - generic [ref=e1136]:
+                - generic [ref=e1137]:
+                  - generic [ref=e1138]: React
+                  - img [ref=e1139]
+                - generic [ref=e1141]: The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.
+            - link "Turbopack An incremental bundler optimized for JavaScript and TypeScript, written in Rust , and built into Next.js." [ref=e1142] [cursor=pointer]:
+              - /url: https://nextjs.org/docs/app/api-reference/turbopack
+              - img [ref=e1144]
+              - generic [ref=e1148]:
+                - generic [ref=e1149]:
+                  - generic [ref=e1150]: Turbopack
+                  - img [ref=e1151]
+                - generic [ref=e1153]:
+                  - text: An incremental bundler optimized for JavaScript and TypeScript, written in Rust
+                  - img [ref=e1154]
+                  - text: ", and built into Next.js."
+            - link "SWC Logo Speedy Web Compiler An extensible Rust based platform for the next generation of fast developer tools, and can be used for both compilation and minification." [ref=e1157] [cursor=pointer]:
+              - /url: https://swc.rs
+              - img "SWC Logo" [ref=e1159]
+              - generic [ref=e1160]:
+                - generic [ref=e1161]:
+                  - generic [ref=e1162]: Speedy Web Compiler
+                  - img [ref=e1163]
+                - generic [ref=e1165]:
+                  - text: An extensible Rust
+                  - img [ref=e1166]
+                  - text: based platform for the next generation of fast developer tools, and can be used for both compilation and minification.
+        - generic [ref=e1173]:
+          - generic [ref=e1174]:
+            - heading "Get started in seconds" [level=2] [ref=e1175]
+            - paragraph [ref=e1176]: Deploy Next.js to Vercel
+          - generic [ref=e1177]:
+            - generic [ref=e1178]:
+              - generic [ref=e1179]:
+                - generic [ref=e1180]: Starter
+                - generic [ref=e1181]: Ecommerce
+                - generic [ref=e1182]: Blog
+                - generic [ref=e1183]: AI
+                - generic [ref=e1184]: Portfolio
+                - generic [ref=e1185]: SaaS
+                - generic [ref=e1186]: Multi-tenant Apps
+                - generic [ref=e1187]: Realtime Apps
+                - generic [ref=e1188]: Documentation
+                - generic [ref=e1189]: Virtual Event
+                - generic [ref=e1190]: Web3
+              - paragraph [ref=e1191]: Vercel is a frontend cloud from the creators of Next.js, making it easy to get started with Next.js quickly.
+              - paragraph [ref=e1192]: Jumpstart your Next.js development with pre-built solutions from Vercel and our community.
+              - link "Deploy a Template on Vercel" [ref=e1193] [cursor=pointer]:
+                - /url: https://vercel.com/templates/next.js?utm_source=next-site&utm_medium=deploy-template-on-vercel-cta&utm_campaign=homepage-new
+                - generic [ref=e1194]: Deploy a Template on Vercel
+                - img [ref=e1196]
+            - 'generic "Three illustrative template cards are displayed at a rotated angle, offset on top on each other: Next.js Commerce, Image Gallery Starter, and Next.js Boilerplate." [ref=e1198]':
+              - generic [ref=e1199]:
+                - img "A Next.js starter from create-next-app." [ref=e1200]
+                - generic [ref=e1201]:
+                  - paragraph [ref=e1202]: Next.js Boilerplate
+                  - paragraph [ref=e1203]: A Next.js starter from create-next-app.
+              - generic [ref=e1204]:
+                - img "An image gallery built on Next.js and Cloudinary." [ref=e1205]
+                - generic [ref=e1206]:
+                  - paragraph [ref=e1207]: Image Gallery Starter
+                  - paragraph [ref=e1208]: An image gallery built on Next.js and Cloudinary.
+              - generic [ref=e1209]:
+                - img "An all-in-one starter kit for high-performance ecommerce sites." [ref=e1210]
+                - generic [ref=e1211]:
+                  - paragraph [ref=e1212]: Next.js Commerce
+                  - paragraph [ref=e1213]: An all-in-one starter kit for high-performance ecommerce sites.
+        - generic [ref=e1214]:
+          - heading "The framework of choice when it matters" [level=2] [ref=e1215]
+          - generic [ref=e1217]:
+            - generic [ref=e1218]:
+              - link "Screenshot of Audible's website Audible" [ref=e1219] [cursor=pointer]:
+                - /url: /showcase
+                - img "Screenshot of Audible's website" [ref=e1220]
+                - generic [ref=e1221]:
+                  - text: Audible
+                  - separator [ref=e1222]
+                  - img [ref=e1223]
+              - link "Screenshot of Sonos's website Sonos" [ref=e1225] [cursor=pointer]:
+                - /url: /showcase
+                - img "Screenshot of Sonos's website" [ref=e1226]
+                - generic [ref=e1227]:
+                  - text: Sonos
+                  - separator [ref=e1228]
+                  - img [ref=e1229]
+            - link "Screenshot of Dice's website Dice" [ref=e1232] [cursor=pointer]:
+              - /url: /showcase
+              - img "Screenshot of Dice's website" [ref=e1233]
+              - generic [ref=e1234]:
+                - text: Dice
+                - separator [ref=e1235]
+                - img [ref=e1236]
+            - generic [ref=e1238]:
+              - link "Screenshot of Notion's website Notion" [ref=e1239] [cursor=pointer]:
+                - /url: /showcase
+                - img "Screenshot of Notion's website" [ref=e1240]
+                - generic [ref=e1241]:
+                  - text: Notion
+                  - separator [ref=e1242]
+                  - img [ref=e1243]
+              - generic [ref=e1245]:
+                - link "Screenshot of Today's website Today" [ref=e1246] [cursor=pointer]:
+                  - /url: /showcase
+                  - img "Screenshot of Today's website" [ref=e1247]
+                  - generic [ref=e1248]:
+                    - text: Today
+                    - separator [ref=e1249]
+                    - img [ref=e1250]
+                - link "Screenshot of ProductHunt's website ProductHunt" [ref=e1252] [cursor=pointer]:
+                  - /url: /showcase
+                  - img "Screenshot of ProductHunt's website" [ref=e1253]
+                  - generic [ref=e1254]:
+                    - text: ProductHunt
+                    - separator [ref=e1255]
+                    - img [ref=e1256]
+            - generic [ref=e1258]:
+              - link "Screenshot of Nike's website Nike" [ref=e1259] [cursor=pointer]:
+                - /url: /showcase
+                - img "Screenshot of Nike's website" [ref=e1260]
+                - generic [ref=e1261]:
+                  - text: Nike
+                  - separator [ref=e1262]
+                  - img [ref=e1263]
+              - link "Screenshot of Washington Post's website Washington Post" [ref=e1265] [cursor=pointer]:
+                - /url: /showcase
+                - img "Screenshot of Washington Post's website" [ref=e1266]
+                - generic [ref=e1267]:
+                  - text: Washington Post
+                  - separator [ref=e1268]
+                  - img [ref=e1269]
+          - paragraph [ref=e1271]:
+            - text: For
+            - strong [ref=e1272]: performance
+            - text: ","
+            - strong [ref=e1273]: efficiency
+            - text: and
+            - strong [ref=e1274]: developer experience
+            - text: .
+            - text: Next.js is trusted by some of the biggest names on the web.
+          - link "View the Next.js Showcase" [ref=e1275] [cursor=pointer]:
+            - /url: /showcase
+            - generic [ref=e1276]: View the Next.js Showcase
+          - generic [ref=e1277]:
+            - heading "Customer Testimonials" [level=2] [ref=e1278]
+            - figure "Notion Senior Software Engineer, Frontend" [ref=e1279]:
+              - blockquote [ref=e1280]:
+                - heading "With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals." [level=3] [ref=e1281]: “With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals.”
+              - generic [ref=e1282]:
+                - img "Notion" [ref=e1283]
+                - generic [ref=e1284]: Senior Software Engineer, Frontend
+            - figure "Adobe Charlton Roberts, Product Engineering" [ref=e1285]:
+              - blockquote [ref=e1286]:
+                - heading "Our UI for Frame.io responds to user input within 100ms and all animations run at a consistent 60fps with Next.js." [level=3] [ref=e1287]: “Our UI for Frame.io responds to user input within 100ms and all animations run at a consistent 60fps with Next.js.”
+              - generic [ref=e1288]:
+                - img "Adobe" [ref=e1289]
+                - generic [ref=e1290]: Charlton Roberts, Product Engineering
+            - figure "Wunderman Thompson's logo Daniel Lopes, Frontend Developer" [ref=e1291]:
+              - blockquote [ref=e1292]:
+                - heading "Next.js has been a game-changer for our agency work and team collaboration. Its powerful features have allowed us to build high-performance websites quickly and efficiently like never before." [level=3] [ref=e1293]: “Next.js has been a game-changer for our agency work and team collaboration. Its powerful features have allowed us to build high-performance websites quickly and efficiently like never before.”
+              - generic [ref=e1294]:
+                - img "Wunderman Thompson's logo" [ref=e1295]
+                - generic [ref=e1299]: Daniel Lopes, Frontend Developer
+  - contentinfo [ref=e1302]:
+    - generic [ref=e1303]:
+      - link "Vercel logo" [ref=e1305] [cursor=pointer]:
+        - /url: https://vercel.com/home?utm_source=next-site&utm_medium=footer&utm_campaign=next-website
+        - img "Vercel logotype" [ref=e1306]
+      - generic [ref=e1308]:
+        - heading "Resources" [level=4] [ref=e1309]
+        - link "Docs" [ref=e1310] [cursor=pointer]:
+          - /url: /docs
+        - link "Support Policy" [ref=e1311] [cursor=pointer]:
+          - /url: /support-policy
+        - link "Learn" [ref=e1312] [cursor=pointer]:
+          - /url: /learn
+        - link "Showcase" [ref=e1313] [cursor=pointer]:
+          - /url: /showcase
+        - link "Blog" [ref=e1314] [cursor=pointer]:
+          - /url: /blog
+        - link "Team" [ref=e1315] [cursor=pointer]:
+          - /url: /team
+        - link "Analytics" [ref=e1316] [cursor=pointer]:
+          - /url: https://vercel.com/analytics?utm_source=next-site&utm_medium=footer&utm_campaign=home_none
+        - link "Next.js Conf" [ref=e1317] [cursor=pointer]:
+          - /url: /conf
+        - link "Previews" [ref=e1318] [cursor=pointer]:
+          - /url: https://vercel.com/products/previews?utm_source=next-site&utm_medium=footer&utm_campaign=home_none
+        - link "Evals" [ref=e1319] [cursor=pointer]:
+          - /url: /evals
+      - generic [ref=e1320]:
+        - heading "More" [level=4] [ref=e1321]
+        - link "Next.js Commerce" [ref=e1322] [cursor=pointer]:
+          - /url: https://vercel.com/templates/next.js/nextjs-commerce?utm_source=next-site&utm_medium=footer&utm_campaign=home_none
+        - link "Contact Sales" [ref=e1323] [cursor=pointer]:
+          - /url: https://vercel.com/contact/sales?utm_source=next-site&utm_medium=footer&utm_campaign=home_none
+        - link "Community" [ref=e1324] [cursor=pointer]:
+          - /url: https://community.vercel.com
+        - link "GitHub" [ref=e1325] [cursor=pointer]:
+          - /url: https://github.com/vercel/next.js
+        - link "Releases" [ref=e1326] [cursor=pointer]:
+          - /url: https://github.com/vercel/next.js/releases
+        - link "Telemetry" [ref=e1327] [cursor=pointer]:
+          - /url: /telemetry
+        - link "Governance" [ref=e1328] [cursor=pointer]:
+          - /url: /governance
+        - link "Ecosystem Working Group" [ref=e1329] [cursor=pointer]:
+          - /url: /ecosystem-working-group
+      - generic [ref=e1330]:
+        - heading "About Vercel" [level=4] [ref=e1331]
+        - link "Next.js + Vercel" [ref=e1332] [cursor=pointer]:
+          - /url: https://vercel.com/solutions/nextjs?utm_source=next-site&utm_medium=footer&utm_campaign=home_none
+        - link "Open Source Software" [ref=e1333] [cursor=pointer]:
+          - /url: https://vercel.com/oss?utm_source=next-site&utm_medium=footer&utm_campaign=home_none
+        - link "GitHub" [ref=e1334] [cursor=pointer]:
+          - /url: https://github.com/vercel
+        - link "Bluesky" [ref=e1335] [cursor=pointer]:
+          - /url: https://bsky.app/profile/vercel.com
+        - link "X" [ref=e1336] [cursor=pointer]:
+          - /url: https://x.com/vercel
+      - generic [ref=e1337]:
+        - heading "Legal" [level=4] [ref=e1338]
+        - link "Privacy Policy" [ref=e1339] [cursor=pointer]:
+          - /url: https://vercel.com/legal/privacy-policy
+        - button "Cookie Preferences"
+      - generic [ref=e1340]:
+        - heading "Subscribe to our newsletter" [level=4] [ref=e1341]
+        - paragraph [ref=e1342]: Stay updated on new releases and features, guides, and case studies.
+        - generic [ref=e1343]:
+          - textbox "Enter your email" [ref=e1344]:
+            - /placeholder: you@domain.com
+          - button "Subscribe" [ref=e1345] [cursor=pointer]
+    - generic [ref=e1347]:
+      - paragraph [ref=e1348]: © 2026 Vercel, Inc.
+      - generic [ref=e1349]:
+        - link "GitHub" [ref=e1350] [cursor=pointer]:
+          - /url: https://github.com/vercel/next.js
+          - img [ref=e1351]
+        - separator [ref=e1352]
+        - link "Twitter" [ref=e1353] [cursor=pointer]:
+          - /url: https://x.com/nextjs
+          - img [ref=e1354]
+        - separator [ref=e1355]
+        - link "Bluesky" [ref=e1356] [cursor=pointer]:
+          - /url: https://bsky.app/profile/nextjs.org
+          - img [ref=e1357]
+  - alert [ref=e1358]

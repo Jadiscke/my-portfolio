@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dracula theme variables */
+  --dracula-bg: #282a36;
+  --dracula-bg-darker: #191a21;
+  --dracula-bg-lighter: #32343a;
+  --dracula-purple: #bd93f9;
+  --dracula-pink: #ff79c6;
+  --dracula-orange: #ffb86c;
+  --dracula-yellow: #f1fa8c;
+  --dracula-green: #50fa7b;
+  --dracula-red: #ff5555;
+  --dracula-blue: #8be9fd;
+  --dracula-fg: #f8f8f2;
+  --dracula-fg-muted: #6272a4;
+  --dracula-fg-highlight: #8be9fd;
+}
+
+@layer utilities {
+  .border-dracula-bg-lighter\/30 {
+    border-color: color-mix(in srgb, var(--dracula-bg-lighter) 30%, transparent);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dracula-bg);
+  color: var(--dracula-fg);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dracula-bg-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dracula-purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dracula-pink);
+}
+
+/* Selection color */
+::selection {
+  background: var(--dracula-purple);
+  color: var(--dracula-bg);
+}
+
+/* Base styles */
+@layer base {
+  * {
+    @apply border-dracula-bg-lighter/30;
+  }
+}
+
+@layer components {
+  /* Dracula-themed components */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-dracula-purple hover:bg-dracula-pink text-dracula-fg shadow-lg shadow-dracula-purple/20;
+  }
+
+  .btn-secondary {
+    @apply bg-dracula-bg-lighter hover:bg-dracula-purple/50 text-dracula-purple border border-dracula-purple/30;
+  }
+
+  .btn-ghost {
+    @apply text-dracula-fg-muted hover:text-dracula-fg hover:bg-dracula-fg/10;
+  }
+
+  .card {
+    @apply bg-dracula-bg-darker rounded-xl p-6 shadow-xl;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-2xl hover:border-dracula-purple/50 transition-all duration-300;
+  }
+
+  .badge {
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-purple {
+    @apply bg-dracula-purple/20 text-dracula-purple;
+  }
+
+  .badge-pink {
+    @apply bg-dracula-pink/20 text-dracula-pink;
+  }
+
+  .badge-orange {
+    @apply bg-dracula-orange/20 text-dracula-orange;
+  }
+
+  .badge-green {
+    @apply bg-dracula-green/20 text-dracula-green;
+  }
+
+  .badge-red {
+    @apply bg-dracula-red/20 text-dracula-red;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 bg-dracula-bg-lighter border border-dracula-bg-lighter/50 rounded-lg text-dracula-fg focus:outline-none focus:ring-2 focus:border-dracula-purple focus:ring-dracula-purple/50 transition-all;
+  }
+
+  .section {
+    @apply py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto;
+  }
+
+  .heading {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold mb-4;
+  }
+
+  .subheading {
+    @apply text-xl md:text-2xl font-medium text-dracula-fg-muted mb-2;
+  }
+
+  .hero-section {
+    @apply min-h-screen flex items-center justify-center relative overflow-hidden;
+  }
+
+  .hero-glow {
+    @apply absolute w-96 h-96 bg-dracula-purple/20 rounded-full blur-3xl -top-48 -left-48;
+  }
+
+  .hero-glow-2 {
+    @apply absolute w-96 h-96 bg-dracula-pink/20 rounded-full blur-3xl bottom-0 right-0;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-dracula-purple to-dracula-pink bg-clip-text text-transparent;
+  }
+
+  .code-block {
+    @apply bg-dracula-bg-darker rounded-lg p-4 font-mono text-sm overflow-x-auto;
+  }
+
+  .code-comment {
+    @apply text-dracula-yellow;
+  }
+
+  .code-function {
+    @apply text-dracula-purple;
+  }
+
+  .code-keyword {
+    @apply text-dracula-pink;
+  }
+
+  .code-string {
+    @apply text-dracula-orange;
+  }
+
+  .code-variable {
+    @apply text-dracula-blue;
+  }
+
+  .code-number {
+    @apply text-dracula-orange;
+  }
+}
+
+/* Scroll indicator animation */
+@keyframes scroll {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(6px); opacity: 0.5; }
+}
+
+.animate-scroll {
+  animation: scroll 1.5s ease-in-out infinite;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
