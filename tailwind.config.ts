@@ -17,7 +17,7 @@ export default {
         "dracula-red": "#ff5555",
         "dracula-blue": "#8be9fd",
         "dracula-fg": "#f8f8f2",
-        "dracula-fg-muted": "#6272a4",
+        "dracula-fg-muted": "#8890b8",
         "dracula-fg-highlight": "#8be9fd",
       },
     },
