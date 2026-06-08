@@ -108,6 +108,12 @@ function ProjectCard({
   project: Project;
   index: number;
 }) {
+  const handleCardClick = () => {
+    if (project.githubUrl) {
+      window.open(project.githubUrl, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -115,49 +121,60 @@ function ProjectCard({
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <Card
-        variant="interactive"
-        className="card-hover group"
-        image={project.thumbnailUrl}
+      <div
+        onClick={handleCardClick}
+        className={project.githubUrl ? "cursor-pointer" : ""}
       >
-        <div className="flex flex-col gap-4">
-          <div className="flex items-center justify-between">
-            <h3 className="text-xl font-bold text-dracula-fg group-hover:text-dracula-purple transition-colors">
-              {project.title}
-            </h3>
-            <div className="flex gap-2">
-              {project.githubUrl && (
-                <a
-                  href={project.githubUrl}
-                  className="text-dracula-fg-muted hover:text-dracula-purple"
-                >
-                  <Github className="w-5 h-5" />
-                </a>
-              )}
-              {project.liveDemoUrl && (
-                <a
-                  href={project.liveDemoUrl}
-                  className="text-dracula-fg-muted hover:text-dracula-purple"
-                >
-                  <ExternalLink className="w-5 h-5" />
-                </a>
-              )}
+        <Card
+          variant="interactive"
+          className="card-hover group"
+          image={project.thumbnailUrl}
+        >
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold text-dracula-fg group-hover:text-dracula-purple transition-colors">
+                {project.title}
+              </h3>
+              <div className="flex gap-2">
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-dracula-fg-muted hover:text-dracula-purple"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Github className="w-5 h-5" />
+                  </a>
+                )}
+                {project.liveDemoUrl && (
+                  <a
+                    href={project.liveDemoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-dracula-fg-muted hover:text-dracula-purple"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <ExternalLink className="w-5 h-5" />
+                  </a>
+                )}
+              </div>
+            </div>
+
+            <p className="text-dracula-fg-muted text-sm leading-relaxed">
+              {project.description}
+            </p>
+
+            <div className="flex flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <UIBadge key={tag} variant="purple" size="sm">
+                  {tag}
+                </UIBadge>
+              ))}
             </div>
           </div>
-
-          <p className="text-dracula-fg-muted text-sm leading-relaxed">
-            {project.description}
-          </p>
-
-          <div className="flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
-              <UIBadge key={tag} variant="purple" size="sm">
-                {tag}
-              </UIBadge>
-            ))}
-          </div>
-        </div>
-      </Card>
+        </Card>
+      </div>
     </motion.div>
   );
 }

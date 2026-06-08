@@ -120,13 +120,15 @@ export function Hero() {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
-            <Button variant="primary" size="lg" icon={<Github className="w-4 h-4" />}>
-              <a href={siteConfig.github}>
+            <Button variant="primary" size="lg" asChild>
+              <a href={siteConfig.github} target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4 mr-2" />
                 View on GitHub
               </a>
             </Button>
-            <Button variant="secondary" size="lg" icon={<Mail className="w-4 h-4" />}>
+            <Button variant="secondary" size="lg" asChild>
               <a href={`mailto:${siteConfig.email}`}>
+                <Mail className="w-4 h-4 mr-2" />
                 Get in Touch
               </a>
             </Button>
